@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/naviStyle.css">
+	<link rel="stylesheet" href="styles/styles.css"> 
+	<link rel="stylesheet" href="styles/footerStyle.css">
+	<link rel="stylesheet" href="styles/search-bar.css">
+	<link rel="stylesheet" href="styles/advanced-search.css">
+	<link rel="stylesheet" href="styles/shoppingCart.css">
+	<link rel="stylesheet" href="styles/customerInfo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Advanced Search</title>
+</head>
+
+<body>
+<header>
+	<div class="topnav" id="myTopnav">
+  		<a href="../project2" class="active"><i class="fa fa-home"></i>Home</a>
+  		<a href="movieList.html"><i class="fa fa-ticket"></i>Browse</a>
+  		<a href="javascript:void(0);" class="icon" onclick="changeNavi()">&#9776;</a>
+  		<div class="search-bar">
+  			<form id="search_form" action="SearchResult.html">
+  				<input type="text" placeholder="Search Movies..." name="search">
+  				<button type="submit"><i class="fa fa-search"></i></button>
+  			</form>
+  			
+  		</div>
+  		<div class="advSearch">
+  				<a href="advanced-search.html" class="as">Advanced Search</a>
+  		</div>
+  		<div class="checkout">
+  			<a href = "ShoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
+  		</div>
+	</div>
+</header>
+
+<div class="customer-info">
+		<form id="customer-info-form" method="post" action="#">
+		    <label><b>First Name</b></label>
+		    <input type="text" placeholder="First Name" name="first_name">
+			<br>
+		    <label><b>Last Name</b></label>
+		    <input type="text" placeholder="Last Name" name="last_name">
+			<br>
+			<label><b>Credit Card Number</b></label>
+		    <input type="text" placeholder="Credit Card Number" name="cc_num">
+			<br>
+			<label><b>Expiration</b></label>
+		    <input type="text" placeholder="YYYY/MM/DD" name="expire_date">
+			<br>
+		    <input type="submit" value="Checkout">
+		</form>
+		<div id="login_error_message"></div>
+</div>
+
+
+<br><br>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="scripts/customerInfo.js"></script>
+
+
+</body>
+</html>

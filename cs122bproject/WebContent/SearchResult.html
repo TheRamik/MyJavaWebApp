@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UCIMDb - Movies and Celebrities</title>
+	<link rel="stylesheet" href="styles/naviStyle.css">
+	<link rel="stylesheet" href="styles/styles.css"> 
+	<link rel="stylesheet" href="styles/footerStyle.css">
+	<link rel="stylesheet" href="styles/movieList.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<header>
+	<div class="topnav" id="myTopnav">
+  		<a href="../cs122bproject" class="active"><i class="fa fa-home"></i>Home</a>
+  		<a href="movieList.html"><i class="fa fa-ticket"></i>Browse</a>
+  		<a href="javascript:void(0);" class="icon" onclick="changeNavi()">&#9776;</a>
+  		<div class="search-bar">
+  			<form id="search_form" action="SearchResult.html">
+  				<input type="text" placeholder="Search Movies..." name="search" id="autocomplete">
+  				<button type="submit"><i class="fa fa-search"></i></button>
+  			</form>
+  			
+  		</div>
+  		<div class="advSearch">
+  				<a href="advanced-search.html" class="as">Advanced Search</a>
+  		</div>
+  		<div class="checkout">
+  			<a href = "ShoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
+  		</div>
+	</div>
+</header>
+	
+	<h1>Search Results</h1>
+	
+	<div class="maxItems">
+		<form id="items_form" action="">
+			<select name="items">
+				<option value="10">10</option>
+				<option value="25">25</option>
+				<option value="50">50</option>
+			</select>
+			<br><br>
+			<input type="submit">
+		</form>
+	</div>
+	
+	<table id="MovieList">
+		<thead>
+			<tr>
+				<th id = "sort_title_head"></th>
+				<th id = "sort_year_head"></th>
+				<th>Director</th>
+				<th>Genres</th>
+				<th>Stars</th>
+				<th>Add To Cart</th>
+			</tr>
+		</thead>
+		<tbody id="results_table_body">
+		</tbody>
+	</table>
+	
+	<div class="page">
+		<form id="page_form" action="">
+		</form>
+	</div>
+
+<footer>
+	<div class="footer-social">
+		<div class="footer-social-inside">
+			<a target="_blank" href="http://www.imdb.com/?ref_=nv_home" title="IMDb">
+				<i class="fa fa-imdb" aria-hidden="true"></i>
+				<span>IMDb</span>
+			</a>
+		</div>
+	</div>
+</footer>
+
+	<!-- include jQuery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+	<!-- include our own JS file -->
+	<script src="scripts/autoComplete.js"></script>
+	<script src="scripts/searchResult.js"></script>
+	
+</body>
+</html>

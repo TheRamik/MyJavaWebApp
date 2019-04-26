@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/naviStyle.css">
+	<link rel="stylesheet" href="styles/styles.css"> 
+	<link rel="stylesheet" href="styles/footerStyle.css">
+	<link rel="stylesheet" href="styles/search-bar.css">
+	<link rel="stylesheet" href="styles/advanced-search.css">
+	<link rel="stylesheet" href="styles/shoppingCart.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Advanced Search</title>
+</head>
+
+<body>
+<header>
+	<div class="topnav" id="myTopnav">
+  		<a href="../project2" class="active"><i class="fa fa-home"></i>Home</a>
+  		<a href="movieList.html"><i class="fa fa-ticket"></i>Browse</a>
+  		<a href="javascript:void(0);" class="icon" onclick="changeNavi()">&#9776;</a>
+  		<div class="search-bar">
+  			<form id="search_form" action="SearchResult.html">
+  				<input type="text" placeholder="Search Movies..." name="search">
+  				<button type="submit"><i class="fa fa-search"></i></button>
+  			</form>
+  			
+  		</div>
+  		<div class="advSearch">
+  				<a href="advanced-search.html" class="as">Advanced Search</a>
+  		</div>
+  		<div class="checkout">
+  			<a href = "ShoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
+  		</div>
+	</div>
+</header>
+
+<br/><br/>
+
+<h2>Cart</h2>
+<table id="itemsList">
+	<thead>
+		<tr>
+			<th>Movie Title</th>
+			<th>Price</th>
+			<th>Qty</th>
+		</tr>
+	</thead>
+	<tbody id="items_in_cart">
+	</tbody>
+	
+</table> 
+
+<br><br>
+
+<div class="checkout_button">
+	<a href="CustomerInfo.html"><i class="fa fa-shopping-cart"></i> CheckOut</a>
+</div>
+
+<br>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src=".scripts/checkout.js"></script>
+
+<footer>
+	<div class="footer-social">
+		<div class="footer-social-inside">
+			<a target="_blank" href="http://www.imdb.com/?ref_=nv_home" title="IMDb">
+				<i class="fa fa-imdb" aria-hidden="true"></i>
+				<span>IMDb</span>
+			</a>
+		</div>
+	</div>
+</footer>
+
+<p>This project is presented by Ricky Tham and Hayley Tse :3</p>
+
+</body>
+</html>

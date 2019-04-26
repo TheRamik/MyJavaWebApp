@@ -1,0 +1,151 @@
+a {
+	float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar {
+	background-color: gray;
+	position:absolute;
+	left:0;
+	right:0;
+}
+
+.navbar a{
+	font-size: 18px;
+	color: white;
+}
+
+#table_metadata {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+}
+
+#table_metadata tbody td, #MovieList tbody th {
+	border: 1px solid #ddd;
+	padding: 14px;
+}
+
+
+#table_metadata tbody tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+#table_metadata th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: black;
+	color: white;
+}
+
+.add_star {
+	width: 320px;
+	height: 320px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color:#fff;
+	top: 40%;
+	left: 15%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 50px 30px;
+}
+
+.add_star input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.add_star input[type="text"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+::placeholder{
+	color: black;
+	opacity: 0.3;
+}
+
+.add_star input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height:40px;
+	background: black;
+	color: #fff;
+	font-size: 18px;
+	opacity: 0.7
+	
+}
+
+.add_star input[type="submit"]:hover{
+	background-color: #ddd;
+    color: black;
+}
+
+.add_movie {
+	width: 320px;
+	height: 600px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color:#fff;
+	top: 60%;
+	left: 15%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 40px 30px;
+}
+
+.add_movie input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.add_movie input[type="text"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+::placeholder{
+	color: black;
+	opacity: 0.3;
+}
+
+.add_movie input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height:40px;
+	background: black;
+	color: #fff;
+	font-size: 18px;
+	opacity: 0.7
+	
+}
+
+.add_movie input[type="submit"]:hover{
+	background-color: #ddd;
+    color: black;
+}

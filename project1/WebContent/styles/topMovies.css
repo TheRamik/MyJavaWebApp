@@ -1,0 +1,24 @@
+#topMovies {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+}
+
+#topMovies td, #topMovies th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+
+#topMovies tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+#topMovies th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #000040;
+	color: white;
+}
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<title>UCIMDb - Movies and Celebrities</title>
+	<link rel="stylesheet" href="styles/naviStyle.css">
+	<link rel="stylesheet" href="styles/styles.css"> 
+	<link rel="stylesheet" href="styles/footerStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<header>
+	<div class="topnav" id="myTopnav">
+  		<a href="" class="active"><i class="fa fa-home"></i>Home</a>
+  		<a href="movieList.html"><i class="fa fa-ticket"></i>Browse</a>
+  		<a href="javascript:void(0);" class="icon" onclick="changeNavi()">&#9776;</a>
+  		<div class="search-bar">
+  			<form id="search_form" action="SearchResult.html">
+  				<input type="text" placeholder="Search Movies..." name="search" id="autocomplete">
+  				<button type="submit"><i class="fa fa-search"></i></button>
+  			</form>
+  			
+  		</div>
+  		<div class="advSearch">
+  				<a href="advanced-search.html" class="as">Advanced Search</a>
+  		</div>
+  		<div class="checkout">
+  			<a href = "ShoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
+  		</div>
+	</div>
+</header>
+
+<br/><br/>
+
+<p>
+	Welcome to UCIMDb! Site is created for CS122B where it contains a huge collection of movies, directors, and stars!
+   	We currently built a page for the top 20 rated movies. Take a look at it on our tabs! :D
+</p>
+
+<br/><br/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+	
+<script src="scripts/autoComplete.js"></script>
+
+<footer>
+	<div class="footer-social">
+		<div class="footer-social-inside">
+			<a target="_blank" href="http://www.imdb.com/?ref_=nv_home" title="IMDb">
+				<i class="fa fa-imdb" aria-hidden="true"></i>
+				<span>IMDb</span>
+			</a>
+		</div>
+	</div>
+</footer>
+
+<p>This project is presented by Ricky Tham and Hayley Tse :3</p>
+
+</body>
+</html>

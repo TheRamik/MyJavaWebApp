@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hayleytse.project4.SearchActivity">
+
+    <TextView
+        android:id="@+id/searchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Movie Database c:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <EditText
+        android:id="@+id/query"
+        android:layout_width="286dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Search movies..."
+        android:inputType="textPersonName"
+        android:layout_below="@+id/searchTitle"
+        android:layout_marginLeft="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="64dp"
+        android:layout_height="44dp"
+        android:onClick="searchDatabase"
+        android:text="GO"
+        android:layout_below="@+id/searchTitle"
+        android:layout_toRightOf="@+id/query"
+        tools:layout_editor_absoluteX="304dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <ListView
+        android:id="@+id/mList"
+        android:layout_width="wrap_content"
+        android:layout_height="445dp"
+        android:layout_below="@+id/query"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+        <Button
+            android:text="Previous"
+            android:id="@+id/prevBtn"
+            android:onClick="prevButton"
+            android:layout_below="@+id/mList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Next"
+            android:id="@+id/nextBtn"
+            android:onClick="nextButton"
+            android:layout_toRightOf="@+id/prevBtn"
+            android:layout_below="@+id/mList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/employeeDashboard.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Employee Dashboard</title>
+</head>
+
+<body>
+<header>
+	<div class="navbar">
+  		<a href="EmployeeDashboard.html" class="active"><i class="fa fa-home"></i></a>
+	</div>
+</header>
+
+<br><br>
+
+	<a href = "AddNewStar.html">Add New Star <i class="fa fa-plus-square"></i></a>
+	<a href = "AddMovie.html">Add New Movie <i class="fa fa-plus-square"></i></a>
+	<a href = "EditMovieInfo.html">Edit Movie Info <i class="fa fa-edit"></i></a>
+
+<br><br>
+	
+<div class="add_star">
+	<form id="add_star_info" method="get" action="#">
+		<label><b>Star Name</b></label>
+		<input type="text" placeholder="Name" name="starName" required="required">
+		<br>
+		<label><b>Birth Year (Optional)</b></label>
+		<input type="text" placeholder="YYYY" name ="birthYear">
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+
+<div class="add_error_message"></div>
+	
+	<!-- include jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- include our own JS file -->
+	<script src="scripts/addNewStar.js"></script>

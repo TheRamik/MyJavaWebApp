@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/employeeDashboard.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Employee Dashboard</title>
+</head>
+
+<body>
+<header>
+	<div class="navbar">
+  		<a href="" class="active"><i class="fa fa-home"></i></a>
+	</div>
+</header>
+
+<br><br>
+
+	<a href = "AddNewStar.html">Add New Star <i class="fa fa-plus-square"></i></a>
+	<a href = "AddMovie.html">Add New Movie <i class="fa fa-plus-square"></i></a>
+	<a href = "EditMovieInfo.html">Edit Movie Info <i class="fa fa-edit"></i></a>
+
+<br><br>
+
+	<table id="table_metadata">
+		<thead>
+			<tr>
+				<th>Category</th>
+				<th>Attributes</th>
+			</tr>
+		</thead>
+		<tbody id="table_metadata_body">
+		</tbody>
+	</table>
+	
+	<!-- include jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- include our own JS file -->
+	<script src="scripts/employeeDashboard.js"></script>
